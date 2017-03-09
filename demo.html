@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+<meta charset="utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<link rel="stylesheet" href="tree_menu_with_opacity_rounded_line.css" />
+<script src="tree_menu_with_opacity_rounded_line.js"></script>
+<title>Demo</title>
+</head><body>
+
+<div class="demo-float">
+	<h2>Default</h2>
+	<div class="menu-with-orl"><ul id="MAIN-MENU-1">
+		<li class=""><a href="#">A-1</a></li>
+		<li class=""><a href="#">A-2</a></li>
+		<li><ul>
+			<li class=""><a href="#"><span></span>B-1</a></li>
+			<li class=""><a href="#"><span></span>B-2</a></li>
+			<li><ul>
+				<li class=""><a href="#"><span></span>C-1</a></li>
+				<li class=""><a href="#"><span></span>C-2</a></li>
+				<li class=""><a href="#"><span></span>C-3</a></li>
+				<li><ul>
+					<li class=""><a href="#"><span></span>D-1</a></li>
+					<li class=""><a href="#"><span></span>D-2</a></li>
+					<li><ul>
+						<li class=""><a href="#"><span></span>E-1</a></li>
+						<li class=""><a href="#"><span></span>E-2</a></li>
+						<li class="focus"><a href="#"><span></span>E-3</a></li>
+					</ul><span></span></li>
+				</ul><span></span></li>
+			</ul><span></span></li>
+			<li class=""><a href="#"><span></span>B-3</a></li>
+		</ul><span></span></li>
+		<li class=""><a href="#">A-3</a></li>
+	</ul></div>
+</div>
+
+<div class="demo-float">
+	<h2>Fixed line by JS</h2>
+	<div class="menu-with-orl"><ul id="MAIN-MENU-2">
+		<li class=""><a href="#">A-1</a></li>
+		<li class=""><a href="#">A-2</a></li>
+		<li><ul>
+			<li class=""><a href="#"><span></span>B-1</a></li>
+			<li class=""><a href="#"><span></span>B-2</a></li>
+			<li><ul>
+				<li class=""><a href="#"><span></span>C-1</a></li>
+				<li class=""><a href="#"><span></span>C-2</a></li>
+				<li class=""><a href="#"><span></span>C-3</a></li>
+				<li><ul>
+					<li class="focus"><a href="#"><span></span>D-1</a></li>
+					<li class=""><a href="#"><span></span>D-2</a></li>
+					<li><ul>
+						<li class=""><a href="#"><span></span>E-1</a></li>
+						<li class=""><a href="#"><span></span>E-2</a></li>
+						<li class=""><a href="#"><span></span>E-3</a></li>
+					</ul><span></span></li>
+				</ul><span></span></li>
+			</ul><span></span></li>
+			<li class=""><a href="#"><span></span>B-3</a></li>
+		</ul><span></span></li>
+		<li class=""><a href="#">A-3</a></li>
+	</ul></div>
+</div>
+
+<div class="demo-float">
+	<h2>Submenu color</h2>
+	<div class="menu-with-orl menu-item-with-color"><ul id="MAIN-MENU-3">
+		<li class=""><a href="#">A-1</a></li>
+		<li class=""><a href="#">A-2</a></li>
+		<li><ul>
+			<li class=""><a href="#"><span></span>B-1</a></li>
+			<li class=""><a href="#"><span></span>B-2</a></li>
+			<li><ul>
+				<li class=""><a href="#"><span></span>C-1</a></li>
+				<li class="focus"><a href="#"><span></span>C-2</a></li>
+				<li class=""><a href="#"><span></span>C-3</a></li>
+				<li><ul>
+					<li class=""><a href="#"><span></span>D-1</a></li>
+					<li class=""><a href="#"><span></span>D-2</a></li>
+					<li><ul>
+						<li class=""><a href="#"><span></span>E-1</a></li>
+						<li class=""><a href="#"><span></span>E-2</a></li>
+						<li class=""><a href="#"><span></span>E-3</a></li>
+					</ul><span></span></li>
+				</ul><span></span></li>
+			</ul><span></span></li>
+			<li class=""><a href="#"><span></span>B-3</a></li>
+		</ul><span></span></li>
+		<li class=""><a href="#">A-3</a></li>
+	</ul></div>
+</div>
+
+<br class="clear" /><br /><br />
+
+<script>
+window.addEventListener('load', function () {
+	var MWO = new MenuWithOrl();
+	
+	MWO.recount_tree_line_position(document.getElementById('MAIN-MENU-2'));
+	MWO.recount_tree_line_position(document.getElementById('MAIN-MENU-3'));
+});
+</script>
+
+</body></html>
